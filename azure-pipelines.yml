@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'azure-tmp-agent'
+  name: 'azure-tmp-agent'
   demands:
   - npm
 
