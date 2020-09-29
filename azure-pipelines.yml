@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  name: 'azure-tmp-agent'
+  vmImage: 'ubuntu-18.04'
   demands:
   - npm
 
@@ -22,7 +22,7 @@ steps:
     versionSpec: '5.6.0' 
 
 - task: Npm@1
-  displayName: 'Run npm install !'
+  displayName: 'Run npm install'
   inputs:
     verbose: false
 
